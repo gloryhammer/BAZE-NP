@@ -1,0 +1,101 @@
+18. Koliko ima zaposlenih u tabeli employees u bazi HR,koji rade u departmanima 20,30,60,70,, a
+kojima je plata veca od 3000 a manja od 6000?
+4
+19. Koliko ima zaposlenih u tabeli employees u bazi HR,kojima se ime zavrsava sa ‘n’ I kojima
+prezime sadrzi slovo ‘c’ ?
+3
+20. Koliko ima zaposlenih u tabeli employees u bazi HR,kojima je ime sadrzi slova ‘a ’ I ‘i’ I to prvo da
+se pojavljuje a pa i ?
+11
+21. Neka imamo kod procedure zadat ispod.Da li se nakon izvrsavanja ove procedure mijenja sadrzaj
+varijable countryName?
+22. NE
+23. Stored procedura proc1() u MySQL/MairaDB bazi podataka se izvrsava pomocu?
+24. Call proc1()
+25. Koja je vrijednost varijable pShipping nakon End case dijela u sljedeceg upitu?
+26. 12
+27. U tijelu mysql/MARIADB procedure,zelite da u varijablu xyz smjestite vrijednost 135.
+set xyz = 135;
+28. U tijelu MYsql/MarijaDB zelite da u varijablu x smjestite vrijednost 5.
+Set x=5;
+29. U tijelu MYsql/MarijaDB zelite da u varijablu y smjestite vrijednost 15.
+Set y=15;
+30. Kojim tagom se definisu linkovi u htmlu?
+<a> I </a>
+31. Kojim tagom se otvara nenumerisana lista?
+<ul/>
+32. Koja vrijednost atributa method se kod formi najcesce koristi?
+POST
+33. Vrste tabele se opisuju html tagovima ?
+<tr> I </tr>
+34. Pojedinacne celije tabele se opisuju html tagovima:
+<td> I </td>
+35. Vertikalno spajanje celija html tabele?
+colspan
+36. Kojim tagom se otvara numerisana lista?
+<ol>
+37. Kako se zove atribut kojim se deifinise link u htmlu?
+href
+38. Horizontalno spajanje celija u htmlu?
+ROWSPAN
+39. Ucitati bazu priprema u kojoj se nalazi tabela_priprema.Koliko studenata u ovoj tabeli ima
+prosj.ocjenu vecu od 7.4?
+21
+40. Koliko ima stud u posmatranoj tabeli cije ime pocinje sa A ili N?
+
+3
+41. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.8 a manja od 8.3?
+8
+42. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.4?
+21
+43. Koliko ima stud u posmatranoj tabeli cije ime pocinje sa A ili O?
+2
+44. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.6 a manja od 8.3?
+13
+45. Koliko ima stud u posmatranoj tabeli cije je ime duzine vece od 6?
+6
+46. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.7?
+18
+47. Koliko ima stud u posmatranoj tabeli cije je ime duzine vece od 3?
+21
+48. Koliko ima stud u posmatranoj tabeli cije ime pocinje sa A ili M?
+4
+49. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.5?
+20
+50. Koliko je studenata u ovoj tabeli kojima je prosjecna ocjena veca od 7.4 a manja od 8.3?
+14
+51. Koliko ima stud u posmatranoj tabeli cije je ime duzine vece od 5?
+15
+52. Koliko ima stud u posmatranoj tabeli cije ime pocinje sa E ili M?
+5
+53. Koliko ima stud u posmatranoj tabeli cije je ime duzine vece od 4?
+19
+54. Koliko je zaposlenih u bazi HR koji rade u zemlji Germany?
+1
+55. Koliko je zaposlenih u bazi HR koji rade u zemlji UK a koji imaju platu vecu od 7000?
+22
+56. Koliko je zaposlenih u bazi HR koji rade u zemlji Canada?
+2
+57. Koliko je zaposlenih u bazi HR koji rade u zemlji UK a koji imaju platu vecu od 6000?
+35
+58. Posmatra se tabela nastavnici koja ima kolone NID IME NORMA ZVANJE.Azurirati ovu tabelu
+tako da se svim nastavnicima cija je norma veca od 4 postavi zvanje DOCENT.
+UPDATE NASTAVNICI SET ZVANJE = ‘DOCENT’ WHERE NORMA>4
+59. U tabeli zaposleni koja ima RID I IME treba umetnuti podatke iz tabeke RADNIK koja ima kolonu
+ID NAME PLATA ZAPOSLENJEGODINE .U tabelu zaposleni se unose vrijednosti iz polja ID I NAME/
+INSERT INTO ZAPOSLENI (RID,IME) SELECT ID,NAME FROM RADNIK
+60. Koliko je zaposlenih u bazi HR koji rade u zemlji Argentina?
+0
+61. Koliko je zaposlenih u bazi HR koji rade u zemlji UK a kojim prezime pocinje sa M?
+
+3
+62. Koliko je zaposlenih u bazi HR koji rade u zemlji Usa?
+68
+63. Napraviti spisak poslova (Tabela JOBS) koje obavljaju zaposleni iz tabele employees , koji sadrzi
+zbir plata i maksimalnu platu za svaki zadati posao. Sortirajte spisak po sljedecem kriterijumu(i u
+redosljedu kolona) : zbir plata, rastuci poredak.
+SELECT job_title Posao, sum(salary) Zbir_plata, max(salary) max_plata from employees, jobs
+where
+employees.job_id = jobs.job_id GROUP by jobs.job_id ORDER by sum(salary) asc
+64. Koliko ima zaposlenih iz tabele employees koji rade u UK a kojima prezime pocinje slovom A?
+2
